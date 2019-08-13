@@ -23,7 +23,7 @@ return
                 'pay_url' => 'https://www.zarinpal.com/pg/StartPay',
                 'verification_url' => 'https://www.zarinpal.com/pg/services/WebGate/wsdl',
                 'merchant_id' => '6f5ed1c8-dbba-11e6-a7d5-000c295eb8fc',
-                'class' => App\Http\Classes\Financial\Payment\Bank\Banks\Zarinpal::class
+                'class' => Limito\Pay\Payment\Bank\Banks\Zarinpal::class
             ]
         ]
     ];
