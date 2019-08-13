@@ -1,5 +1,5 @@
 <?php
-
+namespace Limito\Pay\Seed;
 use Illuminate\Database\Seeder;
 
 class TransactionTypeTableSeeder extends Seeder
