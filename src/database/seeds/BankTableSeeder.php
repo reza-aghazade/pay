@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+namespace Limito\Pay\Seed;
 class BankTableSeeder extends Seeder
 {
     /**
