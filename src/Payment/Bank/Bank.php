@@ -13,7 +13,7 @@ namespace Limito\Pay\Payment\Bank;
 use Limito\Pay\Payment\Payments\Payment;
 use Limito\Pay\Payment\PaymentSystem;
 use Illuminate\Support\Facades\Log;
-
+use Limito\Helper\Response;
 class Bank extends BaseBank implements iBank
 {
 
