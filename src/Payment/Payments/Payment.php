@@ -27,7 +27,7 @@ class Payment extends PaymentSystem
     }
 
 
-    function onPaid(\App\Payment $payment)
+    function onPaid(\Limito\Pay\Payment $payment)
     {
         $user = User::find($payment->user_id);
         return Transaction::type(1)
