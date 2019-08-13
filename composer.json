@@ -1,0 +1,28 @@
+{
+    "name": "limito/pay",
+    "description": "payment helper for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohsen Shahbazi",
+            "email": "msahost@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1.0 || ^8.0",
+        "ext-json": "*",
+        "symfony/translation": "^3.4 || ^4.0",
+        "limito/notifier": "dev-master",
+        "limito/helper": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Limito\\Pay\\": "src/"
+        }
+    }
+}
