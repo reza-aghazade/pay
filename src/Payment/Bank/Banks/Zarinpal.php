@@ -9,7 +9,6 @@
 namespace Limito\Pay\Payment\Bank\Banks;
 
 
-
 use Limito\Pay\Payment\Bank\BaseBank;
 use Limito\Pay\Payment\Bank\iBank;
 
@@ -61,10 +60,9 @@ class Zarinpal extends BaseBank implements iBank
 
         if ($result->Status == 100) {
 
-            return success(['ref_id' => $result->RefID]);
+            return ['status' => true, 'data' => ['ref_id' => $result->RefID]];
         } else {
-            return error('مشکلی رخ داده است',['status' => $result->Status]);
-
+            return ['status' => false, 'message' => 'مشکلی رخ داده است', 'data' => ['status' => $result->Status]];
         }
     }
 }
