@@ -18,7 +18,7 @@ class CreateBanksTable extends Migration
             $table->char('name',30);
             $table->integer('logo_id');
             $table->enum('status',['enable','disable'])->default('enable');
-            $table->enum('type',['online','ussd']);
+            $table->enum('type',['online','ussd','offline']);
             $table->timestamps();
         });
     }
