@@ -12,6 +12,6 @@ namespace Limito\Pay;
 use Illuminate\Database\Eloquent\Model;
 
 class Payment extends Model
-{
-
+{ 
+    protected $fillable = ["user_id" , "bank_id" , "amount" , "name" , "description" , "bank_result" , "payload" ,  "status" , "paid_at"];
 }
