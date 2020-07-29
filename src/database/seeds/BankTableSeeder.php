@@ -35,5 +35,26 @@ class BankTableSeeder extends Seeder
             'status' => 'enable',
             'type' => 'online',
         ],
+        [
+            'id' => 2,
+            'name' => 'parsian',
+            'logo_id' => 0,
+            'status' => 'enable',
+            'type' => 'online',
+        ],
+        [
+            'id' => 3,
+            'name' => 'mellat',
+            'logo_id' => 0,
+            'status' => 'enable',
+            'type' => 'online',
+        ],
+        [
+            'id' => 4,
+            'name' => 'payping',
+            'logo_id' => 0,
+            'status' => 'enable',
+            'type' => 'online',
+        ],
     ];
 }
