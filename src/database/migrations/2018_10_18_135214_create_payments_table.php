@@ -23,7 +23,7 @@ class CreatePaymentsTable extends Migration
             $table->text('bank_result')->nullable()->default(null);
             $table->text('payload')->nullable()->default(null);
             $table->enum('status',['paid','unpaid'])->default('unpaid');
-            $table->enum('period',['once','daily','monthly','monthly','yearly'])->default('once');
+            $table->enum('period',['once','daily','monthly','yearly'])->default('once');
             $table->timestamp('paid_at')->nullable()->default(null);
             $table->timestamps();
             $table->index(['user_id','bank_id','status']);
