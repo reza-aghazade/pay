@@ -10,7 +10,6 @@ namespace Limito\Pay\Payment\Payments;
 
 
 use Limito\Pay\Payment\OnlinePayable;
-use Limito\Pay\Payment\PaymentNotifier;
 use Limito\Pay\Payment\PaymentSystem;
 use Limito\Pay\Transaction\Transaction;
 use App\User;
@@ -19,7 +18,7 @@ use App\User;
 class Payment extends PaymentSystem
 {
 
-    use PaymentNotifier,OnlinePayable;
+    use OnlinePayable;
 
     function handle()
     {

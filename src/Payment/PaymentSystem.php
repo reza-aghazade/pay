@@ -12,6 +12,7 @@ use Limito\Pay\Bank;
 use Limito\Pay\Payment as Model;
 use Limito\Pay\Payment;
 use App\User;
+
 const STATUS_PAYMENT_PAID = 'paid';
 const STATUS_PAYMENT_UNPAID = 'unpaid';
 abstract class PaymentSystem
